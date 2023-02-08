@@ -1,0 +1,132 @@
+-Best case o(N)
+-Average case O(N log N)
+-Worst case O(N^2)
+
+
+BIg o, Big Theta and Big Omega
+
+big o: it is a compexity that is going to be less or equal to the worst case
+
+Big - Omega: it is a complexity that is going to be at least more than the best case
+
+big Theta. it is a complexity that is within bounds of the worst and the best cases.
+
+Algorithm run time complexities
+
+complexity  name            sample
+O(1)        Constant        Accessing a specific element in array     
+
+O(N)        Linear          Loop through array elements
+
+O(LogN)     Logarithmic     Find an element in sorted array
+
+O(N^2)      Quadratic       Looking up every index in the array twice
+
+O(2^N)      Exponential     Double recursion in Fibonacci
+
+
+O(1)        Constant  
+example 
+array=[1,2,3,4,5]
+array[3] // -> It will take Constant time to access the element
+
+O(N)        Linear 
+example
+array=[1,2,3,4,5]
+for element in array:
+    print(element)
+// -> linear time since it is visiting every element of array
+
+O(LogN)     Logarithmic
+example
+array=[1,2,3,4,5]
+for index in range(0. len(array),3):
+    print(array[index])
+// ->logarithmic time since it is visiting only some elements
+
+
+O(N^2)      Quadratic 
+example
+array=[1,2,3,4,5]
+for x in array:
+    for y in array:
+        print(x,y)
+
+O(2^N)      Exponential 
+example
+def Fibonacci(n):
+    if n <=1:
+        return n
+    return Fibonacci(n-1) + Fibonacci(n-2)
+
+
+Space complexity
+    How much memory is needed.
+
+def sum(n):
+    if n <=0;                   // O(n)
+        return 0
+    else:
+        return n + sum(n-1)
+
+def pairSumSequence(n):
+    sum = 0
+    for i in range(0,n+1):                          //O(1)
+        sum = sum + pairSumSequence(i, i+1)
+    return sum
+
+def pairSum(a,b):
+    return a + b
+
+
+Drop Constants and Non Dominant Terms
+
+Drop Constant
+
+O(2N)--->O(N)
+
+Drop Non Dominant Terms
+
+O(N^2+N)--->O(N^2)
+
+O(N+logN)--->O(N)
+
+O(2^2N+1000N^100)--->O(2N)
+
+
+Why do we drop constants and non dorminant terms?
+
+-it is very possible that O(N) code is faster than O(1) code for specific inputs.
+
+-Different computers with Different architectures have different constant factors.
+
+-Different algorithms with the same basic idea and computational complexity might have slightly different constants.
+    -Example: a*(b-c) vs a*b-a*c
+    -As n-->~ (infinity), constant factors are not really a big deal.
+
+Add and <multiply
+
+for a in arrayA:                for a in arrayA:
+    print(a)                        for b in arrayB:
+                                        print(a,b)
+for b in arrayB:                ...............................
+    print(b)                       multiply the Runtimes: O(A*B)
+......................
+Add the Runtimes: O(A+B)
+
+NoDescription
+Complexity
+Rule 1  Any assignment statements and if statements that are executed
+once regardless of the size of the problemO(1)
+
+Rule 2  A simple “for” loop from 0 to n ( with no internal loops)O(n)
+
+Rule 3  A nested loop of the same type takes quadratic time complexityO(n2)
+
+Rule 4  A loop, in which the controlling parameter is divided by two at
+each stepO(log n)
+
+Rule 5  When dealing with multiple statements, just add them up
+You should be warned that some declarations may include initializations and some of these
+may be complex enough to factor into the efficiency of an algorithm.
+
