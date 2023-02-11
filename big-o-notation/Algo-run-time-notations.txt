@@ -130,3 +130,6 @@ Rule 5  When dealing with multiple statements, just add them up
 You should be warned that some declarations may include initializations and some of these
 may be complex enough to factor into the efficiency of an algorithm.
 
+How to measure Recursive Algorithm?
+ -read about it.
+

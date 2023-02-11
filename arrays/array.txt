@@ -1,0 +1,12 @@
+array in memory
+    -one dimensional[read about them]
+    - Two Dimensional array
+    -Three Dimensional array
+
+Creating an array
+    -Assign it to a variable
+    -Define the tyype of elements that it will store
+    -Define its size (the maximum numbers of elements)
+
+    N.B arrays are not good in data strucutures because of memory leak.
+    
