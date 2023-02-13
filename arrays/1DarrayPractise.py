@@ -43,3 +43,20 @@ print(my_array.index(4))
 print("--------------------------------- ")
 my_array.reverse()
 print(my_array)
+print("--------------------------------- ")
+#Get array buffer information through buffer_info() method
+print(my_array.buffer_info())
+print("--------------------------------- ")
+#Check for number of occurences of an element using count() method
+print(my_array.count(4))
+print("--------------------------------- ")
+#Convert array to string using tostring() method
+# my_arr=my_array.tostring()
+# print(my_arr)
+# ints = array('i')
+# ints.fromstring(my_arr)
+# print(ints)
+print("--------------------------------- ")
+#Slice the array
+print(my_array[:4])
+
