@@ -1,0 +1,13 @@
+OPERATION                           TIME COMPLEXITY     SPACE COMPLEXITY
+
+Creating an empty array             O(1)                O(N)
+
+Inserting a value in an array       O(1)/O(N)           O(1)
+
+Traversing a given arrray           O(N)                O(1)
+
+Accessing a given cell              O(1)                O(1)
+
+Searching a given value             O(N)                O(1)
+
+Deleting a given value              O(1)/O(N)           O(1)
