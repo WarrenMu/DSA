@@ -11,3 +11,14 @@ Accessing a given cell                   O(1)                 O(1)
 Searching a given value                  O(mn)                O(1)
 
 Deleting a given value                   O(mn)/O(1)           O(1)
+
+
+
+when to use arrays
+    - to store multiple variables of same data types
+    - random access
+
+when to avoid arrays
+    - same data type elements
+    - reserve memory
+    -
