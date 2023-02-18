@@ -1,0 +1,2 @@
+myDict=dict()
+print(myDict)
