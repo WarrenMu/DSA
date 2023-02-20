@@ -1,0 +1,9 @@
+Operation                       Time complexity     Space complexity
+
+Creating a Tuple                O(1)                O(n)
+
+Traversing a given Tuple        O(n)                O(1)
+
+Acessing a given element        O(1)                O(1)
+
+Searching a given element       O(n)                O(1)
